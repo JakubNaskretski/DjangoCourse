@@ -18,5 +18,6 @@ class AccessRecord(models.Model):
     name = models.ForeignKey('Webpage',on_delete=models.PROTECT)
     date = models.DateField()
 
+
     def __str__(self):
         return str(self.date)
